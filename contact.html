@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Green trees</title>
+    
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+    
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h1><a href="index.html"><img src="images/header_logo.png" alt="Green Trees" height="50px"></a></h1>
+                    </div>
+                    <div class="col-sm-7 col-sm-offset-2">
+                        <ul class="nav nav-justified gnav">
+                            <li role="presentation"><a href="company.html"><span class="nav-item">会社概要</span></a></li>
+                            <li role="presentation"><a href="news.html"><span class="nav-item">新着情報</span></a></li>
+                            <li role="presentation"><a href="showcase.html"><span class="nav-item">制作実績</span></a></li>
+                            <li role="presentation"><a href="plan.html"><span class="nav-item">プラン</span></a></li>
+                            <li role="presentation"><a href="contact.html" class="active"><span class="nav-item">お問合せ</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-bar"></div>
+            </header>
+            <main>
+                <div class="header-image">
+                    <img class="img-responsive hidden-sm hidden-xs" src="images/header_image.png">
+                    <h2 class="title"><large>お問合せ</large></h2>
+                </div>
+                <div class="row main-contents">
+                    <div class="container">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="company" class="col-sm-2 form-label">会社名(※）</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="company" placeholder="○○株式会社">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="section" class="col-sm-2 form-label">部署(※）</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="section" placeholder="経理部">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name" class="col-sm-2 form-label">お名前</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="name" placeholder="吉田太郎">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="col-sm-2 form-label">メールアドレス</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="email" placeholder="example@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="tel" class="col-sm-2 form-label">電話番号</label>
+                                <div class="col-sm-10">
+                                    <input type="tel" class="form-control" id="tel" placeholder="00-0000-0000">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="content" class="col-sm-2 form-label">内容</label>
+                                <div class="col-sm-10">
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-default">送信</button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <p class="text-right">copyright 2016 株式会社○○</p>
+            </footer>      
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
