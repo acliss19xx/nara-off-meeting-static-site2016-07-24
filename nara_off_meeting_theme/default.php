@@ -1,5 +1,6 @@
+<?php defined('C5_EXECUTE') or die("Access Denied."); ?>
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="<?php echo Localization::activeLanguage()?>">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,10 @@
         <title>Green trees</title>
     
         <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/main.css" rel="stylesheet">
-    
+        <link href="<?php echo $view->getThemePath()?>/css/bootstrap.min.css" rel="stylesheet">
+        <link href="<?php echo $view->getThemePath()?>/css/main.css" rel="stylesheet">
+        <?php Loader::element('header_required')?>
+
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -19,11 +21,12 @@
         <![endif]-->
     </head>
     <body>
+      <div class="<?php echo $c->getPageWrapperClass()?>">
         <div class="container">
             <header>
                 <div class="row">
                     <div class="col-sm-3">
-                        <h1><a href="index.html"><img src="images/header_logo.png" alt="Green Trees" height="50px"></a></h1>
+                        <h1><a href="index.html"><img src="<?php echo $view->getThemePath()?>/images/header_logo.png" alt="Green Trees" height="50px"></a></h1>
                     </div>
                     <div class="col-sm-7 col-sm-offset-2">
                         <ul class="nav nav-justified gnav">
@@ -50,19 +53,19 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img src="images/header_image01.png" alt="...">
+                                <img src="<?php echo $view->getThemePath()?>/images/header_image01.png" alt="...">
                                 <div class="carousel-caption">
                                 積極的に
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="images/header_image02.png" alt="...">
+                                <img src="<?php echo $view->getThemePath()?>/images/header_image02.png" alt="...">
                                 <div class="carousel-caption">
                                 お客様のニーズに
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="images/header_image03.png" alt="...">
+                                <img src="<?php echo $view->getThemePath()?>/images/header_image03.png" alt="...">
                                 <div class="carousel-caption">
                                 継続して更新できるウェブサイトを
                                 </div>
@@ -106,8 +109,10 @@
             </footer>      
         </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="js/jquery.min.js"></script>
+        <script src="<?php echo $view->getThemePath()?>/js/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
+        <script src="<?php echo $view->getThemePath()?>/js/bootstrap.min.js"></script>
+      </div>
+      <?php Loader::element('footer_required')?>
     </body>
 </html>
