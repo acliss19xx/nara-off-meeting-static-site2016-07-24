@@ -81,24 +81,10 @@
                     </div>
                 </div>
                 <div class="row main-contents">
-                    <div class="col-sm-4">
-                        <div class="main-mark">
-                            <p class="main-mark-text">speed</p>
-                        </div>
-                        <p class="text-center">誰よりも早くお客様のニーズに合わせたウェブサイトを作成します</p>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="main-mark">
-                            <p class="main-mark-text">active</p>
-                        </div>
-                        <p class="text-center">誰よりも積極的にお客様のお話をお聞きします</p>　
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="main-mark">
-                            <p class="main-mark-text">challenge</p>
-                        </div>
-                        <p class="text-center">常にチャレンジ精神で新しいことに取り組みます</p>
-                    </div>
+                    <?php
+                        $a = new Area('main');
+                        $a->display($c);
+                    ?>
                 </div>
             </main>
             <footer>
