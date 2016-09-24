@@ -28,13 +28,10 @@
                         <h1><a href="index.html"><img src="<?php echo $view->getThemePath()?>/images/header_logo.png" alt="Green Trees" height="50px"></a></h1>
                     </div>
                     <div class="col-sm-7 col-sm-offset-2">
-                        <ul class="nav nav-justified gnav">
-                            <li role="presentation"><a href="company.html"><span class="nav-item">会社概要</span></a></li>
-                            <li role="presentation"><a href="news.html" class="active"><span class="nav-item">新着情報</span></a></li>
-                            <li role="presentation"><a href="showcase.html"><span class="nav-item">制作実績</span></a></li>
-                            <li role="presentation"><a href="plan.html"><span class="nav-item">プラン</span></a></li>
-                            <li role="presentation"><a href="contact.html"><span class="nav-item">お問合せ</span></a></li>
-                        </ul>
+                        <?php
+                            $a = new Area('header nav');
+                            $a->display($c);
+                        ?>
                     </div>
                 </div>
                 <div class="header-bar"></div>
