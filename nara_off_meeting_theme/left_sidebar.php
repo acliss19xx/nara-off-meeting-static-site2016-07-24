@@ -41,7 +41,7 @@
             </header>
             <main>
                 <div class="header-image">
-                    <img class="img-responsive hidden-sm hidden-xs" src="images/header_image.png">
+                    <img class="img-responsive hidden-sm hidden-xs" src="<?php echo $view->getThemePath()?>/images/header_image.png">
                     <h2 class="title"><large>会社概要</large></h2>
                 </div>
                 <div class="row main-contents">
