@@ -1,4 +1,5 @@
 <?php defined('C5_EXECUTE') or die("Access Denied."); ?>
+<?php $this->inc('elements/header.php');?>
             <main>
                 <div class="header-image">
                     <img class="img-responsive hidden-sm hidden-xs" src="<?php echo $view->getThemePath()?>/images/header_image.png">

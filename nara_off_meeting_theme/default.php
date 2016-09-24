@@ -1,4 +1,5 @@
 <?php defined('C5_EXECUTE') or die("Access Denied."); ?>
+<?php $this->inc('elements/header.php');?>
             <main>
                 <div class="header-image">
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
