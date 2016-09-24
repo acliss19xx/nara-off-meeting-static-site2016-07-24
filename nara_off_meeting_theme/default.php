@@ -30,7 +30,7 @@
                     </div>
                     <div class="col-sm-7 col-sm-offset-2">
                         <?php
-                            $a = new Area('header nav');
+                            $a = new GlobalArea('header nav');
                             $a->display($c);
                         ?>
                     </div>
